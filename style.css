@@ -2,9 +2,14 @@ li {
     list-style: none;
 }
 
+nav {
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+}
 
 .navbar {
-    top: 0;
     width: 100%;
     display: flex;
     box-sizing: border-box;
@@ -61,8 +66,11 @@ li {
 
 .carousel {
     overflow: hidden;
-    max-width: 1920px;
+    /* width: 1664px; */
+    max-width: 1664px;
+    margin: 0 auto;
     position: relative;
+    justify-content: center;
 }
 
 .carousel .carou_item,
@@ -72,7 +80,7 @@ li {
 
 .carousel .carou_item img {
     width: 100%;
-    max-width: 1920px;
+    max-width: 1664px;
     height: auto;
 }
 
@@ -159,6 +167,9 @@ li {
 
 
 
+
+
+
 .headLP {
     top: 0;
     width: 100%;
@@ -168,7 +179,7 @@ li {
     justify-content: space-between;
 }
 
-.headLP h2 {
+.headLP h1 {
     margin-left: 125px;
 }
 
@@ -238,6 +249,171 @@ li {
 @media screen and (max-width:512px){
     .lesImgs {
         grid-template-columns: repeat(1, 100%);
+    }
+
+    .headLP ul {
+        float: left;
+        margin-left: -5%;
+    }
+}
+
+.headRC {
+    top: 0;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    overflow: auto;
+    justify-content: space-between;
+}
+
+.headRC h1 {
+    margin-left: 125px;
+}
+
+.headRC ul {
+    display: flex;
+    margin-right: 100px;
+}
+
+.headRC li{
+    margin-left: 15px;
+}
+
+.RetourClient .people {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.RetourClient img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+span {
+    align-items: baseline;
+    display: flex;
+}
+
+
+
+
+
+.headLN {
+    top: 0;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    overflow: auto;
+    justify-content: space-between;
+}
+
+.headLN h1 {
+    margin-left: 125px;
+}
+
+.headLN ul {
+    display: flex;
+    margin-right: 100px;
+}
+
+
+
+.lesImgsLN {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    gap: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.lesImgsLN div{
+    max-width: 1300px;
+    height: auto;
+    position: relative;
+}
+
+.lesImgsLN img{
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+}
+
+@media screen and (max-width:1024px){
+    .lesImgsLN {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media screen and (max-width:512px){
+    .lesImgsLN {
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+
+.lesImgsLN .textAHover {
+    opacity: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding-right: 7px;
+    padding-left: 7px;
+    position: absolute;
+    box-sizing: border-box;
+    border: green 3px solid;
+    /* color: white; */
+}
+
+.lesImgsLN .textAHover p{
+    left: 10px;
+}
+
+.textAHover:hover{
+    opacity: 1;
+    transition: .7s;
+    background-color: white;
+}
+
+hr {
+    width: 90%;
+    height: 0.5px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    background-color: gray;
+}
+
+
+
+
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(6, 16.5%);
+}
+
+footer h1 {
+    margin: 0;
+}
+
+footer li {
+    font-size: medium;
+    text-align: center;
+    margin: 0%;
+}
+
+.res {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:1024px){
+    footer {
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
     }
 }
 
