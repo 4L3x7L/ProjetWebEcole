@@ -1,3 +1,62 @@
+.navbar {
+    top: 0;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    border: red solid 2px;
+    overflow: auto;
+    justify-content: space-between;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.title {
+    margin: 0;
+    padding-top: 0;
+}
+
+.numero {
+    margin: 0;
+    padding-top: 0;
+}
+
+.reseaux {
+    display: flex;
+    margin-right: 0px;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.menu {
+    display: block;
+    margin: 0;
+    margin-top: 3px;
+    padding: 0;
+}
+
+
+@media screen and (max-width:1024px){
+    .numero {
+        display: none;
+    }
+}
+
+@media screen and (max-width:512px){
+    .numero {
+        display: none;
+    }
+
+    .reseaux {
+        display: none;
+    }
+}
+
+
+
+/* carousel */
+
 .carousel {
     overflow: hidden;
     max-width: 1920px;
