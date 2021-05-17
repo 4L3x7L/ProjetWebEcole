@@ -42,28 +42,6 @@ nav {
     padding: 0;
 }
 
-
-@media screen and (max-width:1024px){
-    .numero {
-        display: none;
-    }
-}
-
-@media screen and (max-width:512px){
-    .numero {
-        display: none;
-    }
-
-    .reseaux {
-        display: none;
-    }
-}
-
-
-
-
-
-
 .carousel {
     overflow: hidden;
     /* width: 1664px; */
@@ -104,7 +82,7 @@ nav {
     width: 30px;
     height: 30px;
     opacity: 0.4;
-
+    
 }
 
 .carousel .LesBoutons button#carou_button--prev {
@@ -114,9 +92,6 @@ nav {
 .carousel .LesBoutons button#carou_button--next {
     margin-right: 10px;
 }
-
-
-
 
 .aboutUs {
     display: grid;
@@ -156,19 +131,6 @@ nav {
 .yew .text{
     margin-left: 100px;
 }
-
-@media screen and (max-width:1024px){
-    .aboutUs {
-        grid-template-rows: repeat(2, 50%);
-        grid-template-columns: none;
-    }
-}
-
-
-
-
-
-
 
 .headLP {
     top: 0;
@@ -211,12 +173,6 @@ nav {
     height: auto;
 }
 
-@media screen and (max-width:1024px){
-    .lesImgs {
-        grid-template-columns: repeat(2, 50%);
-    }
-}
-
 .lesImgs p{
     font-size: x-large;
 }
@@ -232,30 +188,6 @@ nav {
     margin-top: 40%;
 }
 
-/* a modifier pr mmetre a la ligne */
-@media screen and (max-width:768px){
-    .headLP {
-        display: block;
-    }
-
-    .headLP ul {
-        float: left;
-        margin-left: 0;
-        justify-content: space-around;
-        width: 400px;
-    }
-}
-
-@media screen and (max-width:512px){
-    .lesImgs {
-        grid-template-columns: repeat(1, 100%);
-    }
-
-    .headLP ul {
-        float: left;
-        margin-left: -5%;
-    }
-}
 
 .headRC {
     top: 0;
@@ -355,17 +287,7 @@ span {
     height: auto;
 }
 
-@media screen and (max-width:1024px){
-    .lesImgsLN {
-        grid-template-columns: repeat(2, 50%);
-    }
-}
 
-@media screen and (max-width:512px){
-    .lesImgsLN {
-        grid-template-columns: repeat(1, 100%);
-    }
-}
 
 .lesImgsLN .textAHover {
     opacity: 0;
@@ -423,6 +345,23 @@ footer li {
 }
 
 @media screen and (max-width:1024px){
+    .numero {
+        display: none;
+    }
+    
+    .aboutUs {
+        grid-template-rows: repeat(2, 50%);
+        grid-template-columns: none;
+    }
+
+    .lesImgsLN {
+        grid-template-columns: repeat(2, 50%);
+    }
+    
+    .lesImgs {
+        grid-template-columns: repeat(2, 50%);
+    }
+    
     footer {
         margin: 50px auto;
         display: grid;
@@ -431,3 +370,38 @@ footer li {
 }
 
 
+@media screen and (max-width:768px){
+    .headLP {
+        display: block;
+    }
+    
+    .headLP ul {
+        float: left;
+        margin-left: 0;
+        justify-content: space-around;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:512px){
+    .numero {
+        display: none;
+    }
+    
+    .reseaux {
+        display: none;
+    }
+
+    .lesImgs {
+        grid-template-columns: repeat(1, 100%);
+    }
+    
+    .headLP ul {
+        float: left;
+        margin-left: -5%;
+    }
+
+    .lesImgsLN {
+        grid-template-columns: repeat(1, 100%);
+    }
+}
