@@ -1,4 +1,4 @@
-let imagePos = 0;
+let imagePosition = 0;
 const images = document.getElementsByClassName('carou_item');
 const allImages = images.length;
 
@@ -15,23 +15,27 @@ function majImage() {
         image.classList.remove('carou_item--visible');
         image.classList.add('carou_item--hidden');
     }
-    images[imagePos].classList.add('carou_item--visible');
+    images[imagePosition].classList.add('carou_item--visible');
 }
 
 function nextImage() {
-    if (imagePos == allImages - 1) {
-        imagePos = 0;
+    if (imagePosition == allImages - 1) {
+        imagePosition = 0;
     } else {
-        imagePos++; 
+        imagePosition++; 
     }
     majImage();
 }
 
 function prevImage() {
-    if (imagePos == 0) {
-        imagePos = allImages - 1;
+    if (imagePosition == 0) {
+        imagePosition = allImages - 1;
     } else {
-        imagePos--;
+        imagePosition--;
     }
     majImage();
 }
+
+var intervalId = window.setInterval(function(){
+    nextImage();
+  }, 3500);
